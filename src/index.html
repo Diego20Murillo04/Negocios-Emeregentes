@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="styles/f1-logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <title>USB</title>
+</head>
+<body>
+    <!-- Anclaje invisible -->
+    <div id="home"></div>
+
+    <!-- NavBar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#home"><img src="styles/f1-logo.png" alt="logo" class="logo-img"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#us">Nosotros</a></li>
+           <li><a href="#viajeros">Viajeros</a></li>
+        </ul>
+
+
+        <!-- Menú de hamburguesa -->
+
+        <div class="hamburguer" id="hamburguer">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+
+    <main class="main-container">
+        <video autoplay muted loop class="background-video">
+            <source src="styles/main-video.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+        <div class="overlay"></div>
+
+        <div class="top-right-text">
+            <img src="styles/ubicacion.png" alt="ubicacion">
+            <p>BELLO - ANTIOQUIA <br> UNIVERSIDAD SAN BUENA AVENTURA</p>
+        </div>
+
+        <h1 class="main-title">NEGOCIOS EMERGENTES</h1>
+        <p class="sub-title">Acelera tu crecimiento</p>
+    </main>
+
+    <!-- Primera Sección -->
+
+    <section class="section">
+        
+        <img src="styles/logo-usb.png" alt="Logo usb" class="logo-usb">
+
+        <div class="section-content-1">
+
+            <div class="half">
+
+                <img src="styles/pista.png" alt="Pista de despliegue" class="pista-img">
+
+            </div>
+
+            <div class="section-center">
+                <p><b>Te ofrecemos la fórmula secreta para alzanzar el éxito. <br> Imagina... Un equipo de expertos trabajando
+                    contigo para desarrollar ideas innovadoras, optimizar tus procesos y expandir tu mercado.</b></p>
+            </div>
+
+            <div class="half">
+                <div class="targets-container">
+
+                    <!-- Tarjeta 1 -->
+
+                    <div class="target">
+                        <div class="target-img">
+                            <img src="styles/target-img-1.jpg" alt="Target first image">
+                        </div>
+                        <div class="target-section">
+                            
+                            <ul class="target-text">
+                                <li><p>Ideación y Creatividad</p></li>
+                                <li>Desarrollo Estratégico</li>
+                                <li>Implementación y crecimiento</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 2 -->
+
+                    <div class="target">
+                        <div class="target-img">
+                            <img src="styles/target-img-2.jpg" alt="Target first image">
+                        </div>
+                        <div class="target-section">
+                            
+                            <p class="target-text">Desde la generación de ideas innovadoras hasta la consolidación de tu negocio
+                                en el mercado, nuestra metodología te acompaña en cada etapa de tu crecimiento</p>
+
+                            <button class="target-button" onclick="openPopup()">
+                               <p>PORQUE ELEGIRNOS</p> 
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="popup-overlay" id="popup">
+                        <div class="popup-content">
+                            <h2 class="popup-title">PORQUÉ ELEGIRNOS</h2>
+                            <p class="popup-text"><b>Elige nuestro equipo y transforma tu visión en realidad</b> <br>
+                                <br>
+                                En un mundo donde la innovación es clave para el éxito, contar con un socio estratégico que te guíe en tu viaje empresarial es esencial. Nuestra empresa se especializa en ofrecer un enfoque integral que va desde la ideación y creatividad hasta la implementación y crecimiento de tu negocio, acompañándote en cada etapa. <br>
+                                <br>
+                                <b>Ideación y Creatividad</b> <br>
+                                Fomentamos un entorno de pensamiento creativo, donde cada idea es valiosa. Trabajamos contigo para desarrollar conceptos innovadores que se alineen con tu visión, permitiéndote destacar en un mercado competitivo. <br>
+                                <br>
+                                <b>Desarrollo Estratégico</b> <br>
+                                Después de generar ideas, pasamos al desarrollo estratégico, creando un plan sólido que garantice su viabilidad. Definimos objetivos claros y estrategias personalizadas, basadas en un análisis profundo del mercado. <br>
+                                <br>
+                                <b>Implementación y Crecimiento</b> <br>
+                                La implementación es donde se hace realidad. Ejecutamos las estrategias de manera efectiva, monitoreando el progreso y ajustando tácticas según sea necesario. Nuestro objetivo es asegurar un crecimiento sostenible y exitoso. <br>
+                                <br>
+                                <b>Experiencia y Resultados Personalizados</b> <br>
+                                Con años de experiencia, ofrecemos soluciones adaptadas a tus necesidades específicas. Tu éxito es nuestra prioridad, y trabajamos para que logres tus metas. <br>
+                                <br>
+                                Al elegir nuestra empresa, optas por un socio comprometido con tu crecimiento. Permítenos ser parte de tu viaje y juntos transformemos tu visión en una realidad próspera.
+                                
+                                </p>
+                            <button class="close-btn" onclick="closePopup()">Cerrar</button>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 3 -->
+
+                    <div class="target">
+                        <div class="target-img">
+                            <img src="styles/target-img-3.jpg" alt="Target first image">
+                        </div>
+                        <div class="target-section">
+                            
+                            <ul class="target-text">
+                                    <li><p>Experiencia</p></li>
+                                <li>Resultados</li>
+                                <li>Personalización</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        
+    </section>
+
+    <!-- Segunda Sección -->
+
+    <section class="section">
+        <div class="section-content-2">
+
+            <div class="banner-container">
+                <div class="banner-title">
+                    <div class="subhalf-banner">
+                        <img src="styles/bandera-de-meta.png" alt="bandera-de-meta">
+                    </div>
+                    <div class="subhalf-banner-text">
+                        <p>ZONA DE PROPULSIÓN</p>
+                    </div>
+                </div>
+                <div class="banner-text">
+                    <p>¿Tienes una idea innovadora y quieres convertirla en realidad? Nuestra zona de propulsión es el espacio ideal para que emprendedores universitarios como tú den el primer paso. Contamos con herramientas, mentoría y una comunidad de apoyo para ayudarte a transformar tu visión en un negocio exitoso.</p>
+                </div>
+            </div>
+            
+            <div class="banner-container-2">
+                <div class="banner-text">
+                    <p>La zona de avance en una carrera de emprendedores es ese punto crítico donde se debe tomar una decisión importante que puede marcar la diferencia entre el éxito y el fracaso. Al igual que en la F1, requiere una combinación de estrategia, habilidad, innovación y un equipo sólido. Superar esta zona de avance implica salir de la zona de confort y asumir riesgos calculados.</p>
+                </div>
+                <div class="banner-title-2">
+                    <div class="subhalf-banner-text-2">
+                        <p>ZONA DE AVANCE</p>
+                    </div>
+                    <div class="subhalf-banner-2">
+                        <img src="styles/bandera-de-meta.png" alt="bandera-de-meta">
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner-container">
+                <div class="banner-title">
+                    <div class="subhalf-banner">
+                        <img src="styles/bandera-de-meta.png" alt="bandera-de-meta">
+                    </div>
+                    <div class="subhalf-banner-text">
+                        <p>ZONA DE DESARROLLO</p>
+                    </div>
+                </div>
+                <div class="banner-text">
+                    <p>Imaginemos la zona de desarrollo como el taller donde se construye y perfecciona el auto de carreras. En un emprendimiento, es el espacio donde se generan nuevas ideas, se experimentan, se aprenden de los errores y se crece.</p>
+                </div>
+            </div>
+
+            <div class="banner-container-2">
+                <div class="banner-text">
+                    <p> Es un momento crítico en la vida. necesitamos una pista despejada para elevar las ideas de las empresas, necesitamos un entorno propicio y los recursos adecuados para convertirse en negocios exitosos.</p>
+                </div>
+                <div class="banner-title-2">
+                    <div class="subhalf-banner-text-2">
+                        <p>ZONA DE DESPEGUE</p>
+                    </div>
+                    <div class="subhalf-banner-2">
+                        <img src="styles/bandera-de-meta.png" alt="bandera-de-meta">
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner-container">
+                <div class="banner-title">
+                    <div class="subhalf-banner">
+                        <img src="styles/bandera-de-meta.png" alt="bandera-de-meta">
+                    </div>
+                    <div class="subhalf-banner-text">
+                        <p>ZONA DE RELACIONAMIENTO</p>
+                    </div>
+                </div>
+                <div class="banner-text">
+                    <p>no es un paso aislado, sino que debe integrarse a lo largo de todo el proceso. Desde la fase de ideación, donde se pueden buscar mentores para validar la idea, hasta la fase de crecimiento, donde se necesitan socios estratégicos para expandir el negocio. <br>
+                        la zona de relacionamiento es un activo fundamental para cualquier emprendedor. Al construir una red sólida y cultivar relaciones significativas, se aumentan las posibilidades de éxito y se acelera el crecimiento del negocio.</p>
+                </div>
+            </div>
+
+            <div class="banner-container-2">
+                <div class="banner-text">
+                    <p>medir el éxito de la zona de inteligencia es un desafío complejo que requiere considerar múltiples factores y contextos. Es fundamental definir claramente qué se entiende por "inteligencia" en el caso específico y seleccionar los indicadores más relevantes para evaluar el progreso.</p>
+                </div>
+                <div class="banner-title-2">
+                    <div class="subhalf-banner-text-2">
+                        <p>ZONA DE INTELIGENCIA</p>
+                    </div>
+                    <div class="subhalf-banner-2">
+                        <img src="styles/bandera-de-meta.png" alt="bandera-de-meta">
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner-container">
+                <div class="banner-title">
+                    <div class="subhalf-banner">
+                        <img src="styles/bandera-de-meta.png" alt="bandera-de-meta">
+                    </div>
+                    <div class="subhalf-banner-text">
+                        <p>ZONA DE INTERNACIONAL</p>
+                    </div>
+                </div>
+                <div class="banner-text">
+                    <p>representa un espacio de competencia, conexión y crecimiento más allá de las fronteras nacionales. Aunque a primera vista puedan parecer mundos distintos, comparten similitudes sorprendentes en cuanto a la importancia de la expansión, la adaptación a nuevos entornos y la búsqueda de la excelencia.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Tercera Sección -->
+
+    <section class="split-section">
+        <h1 class="section-title">¡Prioriza tu crecimiento!</h1>
+        <div class="split-section-video">
+            <video autoplay muted loop class="background-video-2">
+                <source src="styles/section-video-2.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+        </div>
+        <div class="split-section-text">
+            <p>Aquellos que logren navegar con éxito este complejo escenario obtendrán una ventaja competitiva significativa y podrán alcanzar un crecimiento exponencial. <br> 
+                Es por esto que, en los Negocios Emergentes, cada vuelta cuenta: afina tu estrategia, maximiza tu rendimiento y mantén el ritmo para estar siempre un paso adelante de la competencia.</p>
+        </div>
+    </section>
+
+    <!-- Nosotros Section -->
+
+    <section class="section-us" id="us">
+        <h3 class="us-title">Nosotros</h3>
+        <div class="us-container">
+            <div class="us-mision">
+                <h4>Misión</h4>
+                <p>Empoderar a emprendedores a través de la creación de páginas web personalizadas y efectivas que impulsen su 
+                    crecimiento y los posicionen como líderes en su industria.</p>
+            </div>
+            <div class="us-vision">
+                <h4>Visión</h4>
+                <p>Ser la plataforma de referencia para emprendedores que buscan construir una presencia en línea sólida y 
+                    escalable, facilitando su camino hacia el éxito empresarial.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+
+    <section class="testimonials-section" id="viajeros">
+        <div class="testimonials-title">
+            <h2>Nuestros viajeros favoritos</h2>
+        </div>
+        <div class="swiper mySwiper">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <p>"El equipo es increíblemente talentoso y comprometido. Me brindaron un acompañamiento personalizado en
+                            cada etapa del proceso, lo que me permitió superar los desafíos y alcanzar mis objetivos."</p>
+                        <div class="profile">
+                            <img src="styles/alejandra-hernandez.jpg" alt="Alejandra Hernandez">
+                            <h4>Alejandra Hernandez</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <p>"No solo me proporcionó conocimientos técnicos, sino que también me inspiró a pensar de manera más
+                            creativa y a salir de mi zona de confort."</p>
+                        <div class="profile">
+                            <img src="styles/mariana-palacio.jpg" alt="Mariana Palacio">
+                            <h4>Mariana Palacio</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <p>"Me ayudó a validar mi modelo de negocio y a atraer a los inversores adecuados."</p>
+                        <div class="profile">
+                            <img src="styles/vanesa aristizabal.jpg" alt="Vanesa Aristizabal">
+                            <h4>Vanesa Aristizabal</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <p>"El equipo demostró un compromiso excepcional, guiándome a superar retos y alcanzar mis objetivos.
+                            Su apoyo no solo me brindó habilidades técnicas, sino que también me inspiró a pensar de manera más creativa."</p>
+                        <div class="profile">
+                            <img src="styles/selena-santos.jpg" alt="Selena Santos">
+                            <h4>Selena Santos</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <p>"La profesionalidad del equipo es notable. Me ofrecieron apoyo constante que me ayudó a enfrentar
+                            obstáculos y me motivaron a explorar nuevas ideas y asumir riesgos."</p>
+                        <div class="profile">
+                            <img src="styles/hansel-cuesta.jpg" alt="Hansel Cuesta">
+                            <h4>Hansel Cuesta</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <p>"Trabajar con este equipo ha sido transformador. Su dedicación y asesoría me permitieron sortear
+                            desafíos y atraer a los inversores adecuados, impulsando mi creatividad en el proceso."</p>
+                        <div class="profile">
+                            <img src="styles/mario-montes.jpg" alt="Mario Montes">
+                            <h4>Mario Montes</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>    
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logos">
+                <img src="styles/f1-logo.png" alt="F1 Logo" class="footer-logo">
+                <img src="styles/logo-usb.png" alt="USB Logo" class="footer-logo">
+            </div>
+
+            <div class="footer-social">
+
+                <h3 class="social-title">Social</h3>
+
+                <div class="social-icons">
+                    <a href="#"><img src="styles/logo-facebook.png" alt="Facebook" class="social-icon"></a>
+                    <a href="#"><img src="styles/logo-X.png" alt="X" class="social-icon"></a>
+                    <a href="#"><img src="styles/logo-instagram.png" alt="Instagram" class="social-icon"></a>
+                </div>
+                
+            </div>
+
+            <div class="footer-contact">
+
+                <h3 class="contact-title">Contacto</h3>
+                <p>Email: info@example.com</p>
+                <p>Teléfono: +123 456 7890</p>
+
+            </div>
+            <div class="footer-copy">
+                <p>©2024 NEGOCIOS EMERGENTES - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Swiper JS -->
+     
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>
