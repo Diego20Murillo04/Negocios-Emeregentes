@@ -1091,4 +1091,24 @@ html, body {
     .target-section .target-text {
         font-size: var(--font-size-xs);
     }
+
+    .target .taget-img img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .us-mision,
+    .us-vision {
+        min-height: auto;
+    }
+
+    .us-mision h4,
+    .us-vision h4 {
+        font-size: var(--font-size-lg);
+    }
+
+    .us-mision p,
+    .us-vision p {
+        font-size: var(--font-size-xs);
+    }
 }
