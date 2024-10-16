@@ -921,6 +921,41 @@ html, body {
     font-size: var(--font-size-xs);
 }
 
+/* Efectos Fade-in y Slide-in*/
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(-40px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-in {
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slide-in.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(50%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slide-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 /* Responsive */
 
 @media (max-width: 1024px) {

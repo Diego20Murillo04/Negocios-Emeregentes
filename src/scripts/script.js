@@ -124,3 +124,49 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+// Efecto Fade-in a elementos
+document.addEventListener('DOMContentLoaded', () => {
+
+    // Selecciona los elementos que contienen la clase .fade-in
+    const fadeInElements = document.querySelectorAll('.fade-in');
+
+    // Selecciona todos los elementos que se deslizan
+    const slideInElements = document.querySelectorAll('.slide-in, .slide-in-right');
+
+    const options = {
+        root: null, // Usar el viewport como raíz
+        rootMargin: '0px',
+        threshold: 0.5 // Umbral del 50% del elemento visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+
+                // Agregar la clase 'visible' para el efecto de desvanecimiento
+                if (entry.target.classList.contains('fade-in')) {
+                    entry.target.classList.add('visible');
+                }
+
+                // Agregar la clase 'visible' para el efecto de deslizamiento
+                if (entry.target.classList.contains('slide-in') || entry.target.classList.contains('slide-in-right')) {
+                    entry.target.classList.add('visible');
+                }
+
+                // Dejar de observar el elemento
+                observer.unobserve(entry.target);
+            }
+        });
+    }, options);
+
+    // Observar elementos de desvanecimiento
+    fadeInElements.forEach(element => {
+        observer.observe(element);
+    })
+
+    // Observar elementos de deslizamiento
+    slideInElements.forEach(element => {
+        observer.observe(element);
+    })
+});
