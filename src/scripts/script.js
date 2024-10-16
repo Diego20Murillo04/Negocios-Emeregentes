@@ -33,18 +33,19 @@ window.addEventListener('scroll', () => {
 // Función para el menú hamburguesa
 
 const hamburguer = document.getElementById('hamburguer');
+const navbar = document.querySelector('.navbar');
 const navMenu = document.querySelector('.nav-links');
 
+// Toggle para abrir/cerrar el menú
 hamburguer.addEventListener('click', () => {
-    if (navMenu.classList.contains('active')) {
-        // Remover la clase con un pequeño retraso para permitir que la transición se aplique
-        navMenu.classList.remove('active');
-    } else {
-        // Si el menú está cerrado, mostrarlo normalmente
-        navMenu.classList.add('active');
-    }
-});
+    
+    // Abrir/cerrar el menú de navegación
+    navMenu.classList.toggle('active');
 
+    // Cambiar la clase del navbar para el fondo sólido sin gradiente
+    navbar.classList.toggle('menu-open');
+
+});
 
 // Funcion para mostrar la ventana emergente en pantalla
 
